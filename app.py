@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 import streamlit as st
 from langchain_ollama import OllamaEmbeddings, ChatOllama
 from langchain_community.vectorstores import Chroma
@@ -58,7 +58,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-=======
+
 import streamlit as st
 from langchain_ollama import OllamaEmbeddings
 from langchain_community.vectorstores import Chroma
@@ -118,4 +118,4 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> 56be44e (serve.py)
+56be44e (serve.py)
