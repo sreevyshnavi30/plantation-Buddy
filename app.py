@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain_ollama import OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings, ChatOllama
 from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain_ollama import OllamaLLM
@@ -16,7 +16,7 @@ def main():
     st.set_page_config(page_title="PlantationBuddy 🌱", page_icon="🌿", layout="wide")
 
     st.title("🌱 PlantationBuddy - RAG Chatbot")
-    st.write("Ask me anything about the ingested website content!")
+    st.write("Ask me anything about plantation!")
 
     # Load vectorstore
     vectorstore = load_vectorstore("db")

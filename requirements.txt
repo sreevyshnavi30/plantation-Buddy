@@ -1,9 +1,11 @@
+streamlit
 langchain
-openai
+langchain-community
+langchain-ollama
 chromadb
-youtube-transcript-api
 beautifulsoup4
 requests
+youtube-transcript-api
 gspread
 oauth2client
 pyyaml
