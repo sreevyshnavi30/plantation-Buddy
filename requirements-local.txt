@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit
 langchain
 langchain-community
@@ -9,4 +10,17 @@ requests
 gspread
 oauth2client
 pyyaml
+=======
+streamlit
+langchain
+langchain-community
+openai
+chromadb
+youtube-transcript-api
+beautifulsoup4
+requests
+gspread
+oauth2client
+pyyaml
+>>>>>>> 56be44e (serve.py)
 ollama

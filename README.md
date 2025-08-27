@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 56be44e (serve.py)
 # PlantationBuddy RAG Starter
 
 This is a Retrieval-Augmented Generation (RAG) starter kit for building a farmer knowledge base.
@@ -26,6 +29,9 @@ This is a Retrieval-Augmented Generation (RAG) starter kit for building a farmer
    ```bash
    python serve.py --persist ./chroma_store      --sheet "PlantationBuddy_QA"      --service_json "path/to/service_account.json"
    ```
+<<<<<<< HEAD
 =======
 # plantation-Buddy
 >>>>>>> 6f71636 (Initial commit)
+=======
+>>>>>>> 56be44e (serve.py)

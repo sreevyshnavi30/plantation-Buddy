@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit
 langchain
 langchain-community
@@ -6,6 +7,14 @@ chromadb
 beautifulsoup4
 requests
 youtube-transcript-api
+=======
+langchain
+openai
+chromadb
+youtube-transcript-api
+beautifulsoup4
+requests
+>>>>>>> 56be44e (serve.py)
 gspread
 oauth2client
 pyyaml
