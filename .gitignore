@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 # Python cache
 __pycache__/
 *.pyc
@@ -12,7 +12,6 @@ chroma/
 
 # Streamlit specific
 .streamlit/secrets.toml
-=======
 # Python cache
 __pycache__/
 *.pyc
@@ -26,4 +25,4 @@ chroma/
 
 # Streamlit specific
 .streamlit/secrets.toml
->>>>>>> 56be44e (serve.py)
+

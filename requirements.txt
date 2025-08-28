@@ -1,13 +1,10 @@
 streamlit
 langchain
 langchain-community
-openai
 chromadb
 youtube-transcript-api
 beautifulsoup4
 requests
-gspread
-oauth2client
 pyyaml
 ollama
 flask

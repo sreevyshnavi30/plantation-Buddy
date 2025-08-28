@@ -1,4 +1,4 @@
-embedding_model: text-embedding-ada-002
-generator_model: gpt-3.5-turbo
+embedding_model: all-MiniLM-L6-v2
+generator_model: mistral:7b
 chunk_size: 1000
 chunk_overlap: 100
