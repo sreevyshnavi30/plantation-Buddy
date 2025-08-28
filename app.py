@@ -1,22 +1,21 @@
-# app.py
-import streamlit as st
-from query import query_ollama
+from flask import Flask, request, jsonify
+from query import run_query
 
-st.set_page_config(page_title="Plantation Buddy 🌱", layout="centered")
+app = Flask(__name__)
 
-st.title("🌱 Plantation Buddy")
-st.write("Ask me anything about plants, gardening!")
+@app.route("/")
+def home():
+    return {"message": "Welcome to Plantation Buddy 🌱"}
 
-# User input
-user_input = st.text_input("Enter your question:")
+@app.route("/ask", methods=["POST"])
+def ask():
+    data = request.json
+    query = data.get("query", "")
+    if not query:
+        return jsonify({"error": "No query provided"}), 400
+    
+    response = run_query(query)
+    return jsonify({"query": query, "response": response})
 
-if st.button("Ask"):
-    if user_input.strip():
-        with st.spinner("Thinking..."):
-            try:
-                answer = query_ollama(user_input)
-                st.success(answer)
-            except Exception as e:
-                st.error(f"⚠️ Error: {e}")
-    else:
-        st.warning("Please type a question before clicking Ask.")
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=7860)

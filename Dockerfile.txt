@@ -1,0 +1,19 @@
+FROM python:3.10-slim
+
+# Install Ollama
+RUN apt-get update && apt-get install -y curl && \
+    curl -fsSL https://ollama.com/install.sh | sh
+
+# Install Python deps
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# Copy app files
+COPY . .
+
+# Expose port
+EXPOSE 7860
+
+# Run Flask
+CMD ["python", "app.py"]

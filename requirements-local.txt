@@ -1,26 +1,7 @@
-<<<<<<< HEAD
-streamlit
-langchain
-langchain-community
-openai
-chromadb
-youtube-transcript-api
-beautifulsoup4
-requests
-gspread
-oauth2client
-pyyaml
-=======
-streamlit
-langchain
-langchain-community
-openai
-chromadb
-youtube-transcript-api
-beautifulsoup4
-requests
-gspread
-oauth2client
-pyyaml
->>>>>>> 56be44e (serve.py)
-ollama
+-r requirements.txt   # include everything from requirements.txt first
+
+jupyter
+ipykernel
+black
+flake8
+python-dotenv
